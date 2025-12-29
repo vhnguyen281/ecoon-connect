@@ -1,17 +1,36 @@
 {
-  "name": "ecoon_connectv1",
+  "name": "ecoon_connect",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "NODE_OPTIONS='--max-old-space-size=16384' next dev",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.8",
+    "@types/mapbox-gl": "^3.4.1",
+    "cloudinary": "^2.8.0",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "mapbox-gl": "^3.17.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.2",
     "next": "16.1.1",
+    "next-auth": "^5.0.0-beta.30",
+    "next-cloudinary": "^6.17.5",
+    "photoswipe": "^5.4.4",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-geocode": "^2.0.1",
+    "react-icons": "^5.5.0",
+    "react-map-gl": "^8.1.0",
+    "react-photoswipe-gallery": "^4.0.0",
+    "react-share": "^5.2.2",
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
