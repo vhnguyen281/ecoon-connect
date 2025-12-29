@@ -6,6 +6,10 @@ import { fetchProperties } from "@/Utils/requests";
 async function HomeProperties() {
   const data = await fetchProperties();
 
+  if (!data || !data.properties || data.properties.length === 0) {
+    return null;
+  }
+
   const recentProperties = data.properties
     .sort(() => Math.random() - Math.random())
     .slice(0, 3);
